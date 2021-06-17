@@ -1,0 +1,78 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: url('assets/background.png') #000 top center no-repeat;
+  color: #fff;
+  height: 100%;
+}
+
+.flex-container {
+  display: flex !important;
+  flex: 1 auto;
+  &.column {
+    flex-direction: column;
+  }
+  &.column-r {
+    flex-direction: column-reverse;
+  }
+  &.align {
+    align-items: center;
+  }
+  &.justify {
+    justify-content: center;
+  }
+  &.direction-row {
+    flex-direction: row;
+  }
+  &.end {
+    justify-content: flex-end;
+  }
+  &.between {
+    justify-content: space-between;
+  }
+  &.around {
+    justify-content: space-around;
+  }
+  &.start {
+    justify-content: flex-start;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.btn-primary {
+  width: 288px;
+  height: 67px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  &:hover {
+    background: rgba(107, 99, 181, 0.6);
+  }
+  &:focus {
+    background: brown;
+  }
+  &:active {
+    background: #6B63B5;
+  }
+  &:disabled {
+    background: #6B63B5;
+  }
+  &.active:focus {
+    background: none;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-primary {
+    width: 100%;
+    height: 50px;
+  }
+ }
