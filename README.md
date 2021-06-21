@@ -8,6 +8,14 @@ Se requiere de json-server para poder levantar el proyecto, por lo que se debe e
 
 ```sh
 npm install -g json-server
+yarn install -g json-server
+```
+
+El siguiente paso en instalar las dependencias del proyecto con el siguiente comando
+
+```sh
+npm install
+yarn install
 ```
 
 Una vez instalado, primero levantamos el servicio para que los archivos json puedas ser accesibles. Es importante que sea en el puerto 3004, ya que la aplicación se iniciara en el puerto 3000
@@ -20,6 +28,14 @@ Después iniciamos nuestra aplicación
 
 ```sh
 npm start
+yarn start
+```
+
+Si al compilar surge algún error podemos ejecutar este comando para poder iniciar la aplicación sin problemas
+
+```sh
+rm -rf node_modules && rm -rf package-lock.json && npm install
+rm -rf node_modules && rm -rf yarn.lock && npm install
 ```
 
 ## Que es lo que más me gusto de este desarrollo
