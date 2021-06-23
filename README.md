@@ -3,6 +3,16 @@
 
 En este test se crea una aplicación para ver un listado de personajes de la serie de películas Harry Potter, en el cual se pueden filtrar los personajes, agregar como favoritos y agregar nuevos personajes.
 
+## requerimientos
+Para poder levantar el proyecto se requieren de las siguientes versiones iguales o posteriores de node y npm
+
+```sh
+node --version
+v14.15.4
+npm --version
+7.17.0
+```
+
 ## Instalación
 Se requiere de json-server para poder levantar el proyecto, por lo que se debe ejecutar el siguiente comando:
 
