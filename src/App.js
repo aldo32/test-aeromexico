@@ -14,7 +14,14 @@ import './App.scss';
 import logo from './assets/logo.png';
 
 const App = () => {
-  const apiUrl = "http://localhost:3004/";
+  var apiUrl;
+  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    console.log("Development Mode");
+    apiUrl = "http://localhost:3004/";
+  } else {
+    apiUrl = "http://aldocontent.ml:3004/";
+    console.log("Production Mode");
+  }
   const state = useSelector(state => state.character);
   const dispatch = useDispatch();
 
@@ -41,7 +48,7 @@ const App = () => {
       .then(data => {
         dispatch(setFavorites(data));
       });
-  }, [dispatch]);
+  }, [dispatch, apiUrl]);
 
   const handleClickStudents = (isStudent) => {
     if (isStudent !== null) {
